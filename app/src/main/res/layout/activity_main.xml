@@ -8,40 +8,41 @@
 
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/firstFragmentButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="firstFragment"
-        android:text="1st Fragment"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/secondFragmentButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="160dp"
-        android:onClick="secondFragment"
-        android:text="2nd Fragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstFragmentButton" />
+        <Button
+            android:id="@+id/firstFragmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="firstFragment"
+            android:text="1st Fragment" />
+
+        <Button
+            android:id="@+id/secondFragmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="secondFragment"
+            android:text="2nd Fragment" />
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="409dp"
+        android:layout_height="632dp"
         android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
     </FrameLayout>
 
